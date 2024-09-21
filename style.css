@@ -8,7 +8,7 @@
 }
 /* navbar */
 hr{
-    height: 3px;
+    height: 1px;
     background-color: #AD49E1;
     border: 1px solid #AD49E1;
     border-radius:30%;
@@ -17,7 +17,7 @@ hr{
     transition: all 1s ease;
 }
 hr:hover{
-    height: 6px;
+    height: 4px;
     width: 80%;
 
 }
