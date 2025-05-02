@@ -12,7 +12,7 @@ This is a personal portfolio website showcasing my skills, projects, and contact
 - EmailJS (for the contact form)
 
 ## Features
-- Responsive design that works on various devices
-- Sections for Home, About, Education, Skills, Projects, and Contact
-- Carousel for displaying projects or testimonials
-- Interactive elements with smooth transitions and hover effects
+- Responsive design that works on various devices.
+- Sections for Home, About, Education, Skills, Projects, and Contact.
+- Carousel for displaying projects or testimonials.
+- Interactive elements with smooth transitions and hover effects.
