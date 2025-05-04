@@ -16,3 +16,5 @@ This is a personal portfolio website showcasing my skills, projects, and contact
 - Sections for Home, About, Education, Skills, Projects, and Contact.
 - Carousel for displaying projects or testimonials.
 - Interactive elements with smooth transitions and hover effects.
+
+
