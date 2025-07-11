@@ -15,9 +15,7 @@
     }
   })
 
-
   function sendMail(){
-
     var params = {
         name: document.getElementById('name').value,
         email: document.getElementById('email').value,
@@ -37,5 +35,4 @@
         alert("Your message was sent successfully");
     })
     .catch(err=>console.log(err));
-
   }
