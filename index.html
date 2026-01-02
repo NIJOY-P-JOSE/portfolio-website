@@ -9,7 +9,8 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
     <script type="text/javascript">
         (function () {
             emailjs.init({
@@ -17,6 +18,136 @@
             });
         })();
     </script>
+    <style>
+        /* Modern Education Section Styling */
+/* Education Section Container */
+.education-content {
+    padding: 40px 0;
+    position: relative;
+}
+
+.timeline-container {
+    position: relative;
+    max-width: 850px;
+    margin: 0 auto;
+    padding-left: 20px;
+}
+
+/* Vertical Timeline Line - Refined Alignment */
+.timeline-container::after {
+    content: '';
+    position: absolute;
+    width: 4px;
+    background: linear-gradient(to bottom, #AD49E1, rgba(173, 73, 225, 0.2));
+    top: 0;
+    bottom: 0;
+    left: 20px; /* Aligned with the container padding */
+    border-radius: 10px;
+}
+
+.edu-card {
+    padding: 25px 30px;
+    position: relative;
+    background: rgba(0, 0, 0, 0.03);
+    border: 1px solid rgba(0, 0, 0, 0.311);
+    border-radius: 20px;
+    margin-bottom: 40px;
+    margin-left: 60px; /* Space for the line and dot */
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    backdrop-filter: blur(5px);
+    
+}
+
+.edu-card:hover {
+    transform: translateY(-8px);
+    background: rgba(173, 73, 225, 0.08);
+    border-color: #AD49E1;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5), 0 0 15px rgba(173, 73, 225, 0.2);
+}
+
+/* Timeline Dot - Precise Positioning */
+.edu-dot {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: #AD49E1;
+    border: 4px solid #0b0f1a; /* Matches site background */
+    border-radius: 50%;
+    left: -48px; /* Positioned exactly on the 4px line */
+    top: 28px;
+    z-index: 2;
+    box-shadow: 0 0 10px #AD49E1;
+    transition: all 0.3s ease;
+}
+
+.edu-card:hover .edu-dot {
+    background: #ffffff;
+    transform: scale(1.2);
+    box-shadow: 0 0 20px #AD49E1;
+}
+
+.edu-year {
+    color: #AD49E1;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+}
+
+.edu-info h3 {
+    font-size: 22px;
+    color: #000000;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.edu-college {
+    color: #AD49E1;
+    text-decoration: none;
+    font-size: 16px;
+    display: inline-block;
+    margin-bottom: 12px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.edu-college:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.edu-info p {
+    color: #a0a0a0;
+    line-height: 1.6;
+    font-size: 15px;
+}
+
+.edu-grade {
+    display: inline-block;
+    margin-top: 18px;
+    padding: 6px 16px;
+    background: #AD49E1;
+    color: #000000;
+    border-radius: 12px;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .timeline-container {
+        margin-left: 10px;
+    }
+    .edu-card {
+        margin-left: 45px;
+        padding: 20px;
+    }
+    .edu-dot {
+        left: -43px;
+    }
+}
+    </style>
 </head>
 <body>
     <nav class="navbar">
@@ -24,11 +155,7 @@
             <div class="logo">
                 <a href="#">Portfo<span>lio.</span>
                </a>
-            </div>
-            <div class="menu-icon">
-                <i class="fa fa-bars"></i> 
-            </div>            
-            
+            </div>        
             <ul class="menu">
                 <li>
                     <a href="#home" class="menu-btn">Home</a>
@@ -124,7 +251,55 @@
     <hr>
 
     <!--Education Section-->
-     <section class="education" id="education">
+       <section class="education" id="education">
+    <div class="max-width">
+        <h2 class="title fadein">My Education</h2>
+
+        <div class="education-content">
+            <div class="timeline-container">
+
+                <div class="edu-card" data-aos="fade-up">
+                    <div class="edu-dot"></div>
+                    <div class="edu-info">
+                        <div class="edu-year">2024 – 2027 (Expected)</div>
+                        <h3>Bachelor of Technology in Computer Science & Engineering</h3>
+                        <a href="https://vidyaacademy.ac.in/" target="_blank" class="edu-college">
+                            Vidya Academy of Science and Technology, Thrissur
+                        </a>
+                        <p>Pursuing a strong foundation in software engineering, data structures, algorithms, and modern web technologies. </p>
+                        <span class="edu-grade">CGPA: 8.98 </span>
+                    </div>
+                </div>
+
+                <div class="edu-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="edu-dot"></div>
+                    <div class="edu-info">
+                        <div class="edu-year">2022 – 2024</div>
+                        <h3>Diploma in Computer Hardware Engineering</h3>
+                        <a href="http://www.gpcchelakkara.ac.in/" target="_blank" class="edu-college">
+                            Government Polytechnic College, Chelakkara
+                        </a>
+                        <p>Gained hands-on experience in computer hardware, networking, and system maintenance. </p>
+                        <span class="edu-grade">CGPA: 8.99 </span>
+                    </div>
+                </div>
+
+                <div class="edu-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="edu-dot"></div>
+                    <div class="edu-info">
+                        <div class="edu-year">2020 – 2022</div>
+                        <h3>Higher Secondary Education (Science)</h3>
+                        <span class="edu-college">Govt. R. S. R. V. H. S. S, Velur </span>
+                        <p>Focused on Physics, Chemistry, and Mathematics to build a strong analytical foundation. </p>
+                        <span class="edu-grade">Percentage: 82% </span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+    <!-- <section class="education" id="education">
         <div class="max-width">
             <h2 class="title fadein">Education</h2>
             <div class="timeline"></div>
@@ -167,7 +342,7 @@
                 </div>
                 <div class="circle"><i class="fa-solid fa-graduation-cap"></i></div>
         </div>
-    </section>
+    </section> -->
     <!--Education Section Ended-->
 
     <!--Skill Section-->
@@ -218,9 +393,9 @@
             </div>
         </div>
     </section>
-    <!-- Skills Section End -->
+    <!-- Skills section end -->
 
-    <!-- Project Section Start -->
+    <!-- Project section start -->
     <section class="projects" id="projects">
         <div class="max-width">
             <h2 class="title fadein">My Projects</h2>
@@ -364,7 +539,6 @@
         </div>
     </section>
     <!--Project Section Ended-->
-
 
     <footer>
         <span>Created By <a href="https://www.linkedin.com/in/nijoy-p-jose" target="_blank" rel="noreferrer">Nijoy </a> |<span>  <i class="fa-solid fa-copyright"></i>All rights reserved 2024</span></span>
